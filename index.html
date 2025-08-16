@@ -650,7 +650,7 @@
           Secret Messages For You
         </h2>
         <p style="color: var(--deep-love)">
-          Click each one to reveal my feelings ❤
+          Click each one to reveal my feelings ❤️
         </p>
 
         <div class="message-box">
@@ -672,7 +672,7 @@ VGhlIHdheSB5b3UgbWFrZSBtZSBmZWVsLi4uIHRoZXJlJ3Mgbm8gY29kZSBmb3IgdGhhdA==</pre
             >
           </div>
           <div class="decoded-message">
-            The way you make me feel... there's no code for that ❤
+            The way you make me feel... there's no code for that ❤️
           </div>
         </div>
 
@@ -715,11 +715,11 @@ SSBsb3ZlIHlvdSBtb3JlIHRoYW4gYW55IG51bWJlciBpbiB0aGUgdW5pdmVyc2U=</pre
           heart.innerHTML = "❤";
 
           // Random position
-          heart.style.left = ${Math.random() * 100}%;
+          heart.style.left = `${Math.random() * 100}%`;
 
           // Random size
           const size = Math.random() * 30 + 20;
-          heart.style.fontSize = ${size}px;
+          heart.style.fontSize = `${size}px`;
 
           document.getElementById("heartsContainer").appendChild(heart);
 
@@ -754,10 +754,10 @@ SSBsb3ZlIHlvdSBtb3JlIHRoYW4gYW55IG51bWJlciBpbiB0aGUgdW5pdmVyc2U=</pre
           const confetti = document.createElement("div");
           confetti.className = "heart";
           confetti.innerHTML = ["❤", "✨", "🎉"][Math.floor(Math.random() * 3)];
-          confetti.style.left = ${x + Math.random() * 100 - 50}px;
-          confetti.style.top = ${y}px;
-          confetti.style.fontSize = ${Math.random() * 20 + 10}px;
-          confetti.style.animationDuration = ${Math.random() * 2 + 1}s;
+          confetti.style.left = `${x + Math.random() * 100 - 50}px`;
+          confetti.style.top = `${y}px`;
+          confetti.style.fontSize = `${Math.random() * 20 + 10}px`;
+          confetti.style.animationDuration = `${Math.random() * 2 + 1}s`;
 
           document.getElementById("heartsContainer").appendChild(confetti);
 
@@ -814,7 +814,7 @@ SSBsb3ZlIHlvdSBtb3JlIHRoYW4gYW55IG51bWJlciBpbiB0aGUgdW5pdmVyc2U=</pre
       window.addEventListener("resize", function () {
         const gallery = document.querySelector(".heart-gallery");
         if (gallery) {
-          gallery.style.height = ${gallery.offsetWidth * 0.9}px;
+          gallery.style.height = `${gallery.offsetWidth * 0.9}px`;
         }
       });
     </script>
